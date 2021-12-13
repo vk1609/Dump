@@ -1,0 +1,43 @@
+.img-fluid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
+  .text-over-image{
+      z-index: 1;
+
+  }
+ 
+
+
+.background img
+{
+    filter: alpha(opacity=50); 
+    opacity: 0.2;
+    margin-left: 90px;
+}
+.tagline
+{
+    margin-top: -380px;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    margin-left: 30px;
+    background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: text 10s linear infinite; 
+    overflow: hidden;
+    white-space: nowrap;
+    animation: text 10s steps(21) infinite alternate;
+    border-right: 1px solid black;
+}
+@keyframes text
+{
+    0%{background-position: 0%;}
+    100%{background-position: 400%;}
+    0%{width: 0ch;}
+    50%{width: 25ch;}
+}
